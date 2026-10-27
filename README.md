@@ -13,7 +13,7 @@ On one open base model (Qwen3.5-9B), the study compares four approaches to four-
 | Path | Content |
 |---|---|
 | `analysis/scripts/` | All analysis scripts. The numeric prefix gives the order of development. |
-| `analysis/scripts/130_figures_v5.py` | Draws all six manuscript figures from aggregate results only, with no patient data needed. |
+| `analysis/scripts/132_figures_journal.py` | Draws all six manuscript figures in journal style from aggregate results only, with no patient data needed. |
 | `analysis/reports/` | Aggregate result tables: paired differences, calibration curves, robustness, guidance, token cost, TRIPOD-LLM self-check. |
 | `figures/` | Manuscript figures (English and Chinese, PNG and PDF). |
 | `openjev_patch/` | Patched `hf.py` for OpenJev and notes on the two compatibility patches. |
@@ -40,7 +40,7 @@ Clef appears in a few early scripts. It was an exploratory arm that is not repor
 ## Reproducing the figures
 ```bash
 pip install -r requirements.txt
-python analysis/scripts/130_figures_v5.py   # writes figures/*_{en,zh}.{png,pdf,svg}
+python analysis/scripts/132_figures_journal.py   # writes figures/*_{en,zh}.{png,pdf,svg}
 ```
 
 ## Pipeline overview
@@ -58,7 +58,7 @@ python analysis/scripts/130_figures_v5.py   # writes figures/*_{en,zh}.{png,pdf,
 | Subgroups, break-even, adjacent errors, per-class recall | 99, 106, 109, 116, 122, 123 |
 | Natural-language guidance | 83, 85 |
 | Screen for contradictory generative content | 81 |
-| Tables and figures | 86, 94, 130 |
+| Tables and figures (journal style, final) | 86, 94, 132 |
 | Cold-start contrast and ASA IV–V operating characteristics | 131 |
 
 ## Environment
