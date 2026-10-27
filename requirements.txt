@@ -1,0 +1,12 @@
+# Versions used for the analyses (Python 3.13)
+torch==2.14.1+cu130
+transformers==5.20.1
+peft==0.21.2
+bitsandbytes==0.50.2
+accelerate==1.15.0
+scikit-learn==1.9.1
+xgboost==3.4.1
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+matplotlib==3.11.2

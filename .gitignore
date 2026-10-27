@@ -1,0 +1,11 @@
+# never commit data, predictions or weights
+*.csv
+!analysis/reports/paired_differences.csv
+*.parquet
+*.pkl
+*.safetensors
+*.bin
+*.pt
+data/
+__pycache__/
+*.svg
