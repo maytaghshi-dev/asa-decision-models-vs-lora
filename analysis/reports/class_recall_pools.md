@@ -1,6 +1,6 @@
 # Per-class recall over 50 independent 1,000-label calibration pools
 
-Mean (min–max) over the same 50 pools as in Supplementary S18, drawn without replacement from the development operations (local: 4,326; MOVER: a further 5,000 training-split operations); the pools overlap, so the range understates between-pool variation. LoRA: mean (min–max) over three seeds. Evaluation sets: local validation set (n = 2,753; ASA I n = 36, IV–V n = 80) and MOVER subset (n = 4,000).
+Mean (min–max) over the same 50 pools as in Supplementary S18, drawn without replacement from the development operations (local: 4,326; MOVER: a further 5,000 training-split operations); the pools overlap, so the range understates between-pool variation. LoRA: mean (min–max) over three seeds. Evaluation sets: local validation set (n = 2,753; ASA I n = 36, IV–V n = 79) and MOVER subset (n = 4,000).
 
 | Data | Arm | κ | Accuracy | Recall class I | Recall class IV–V | Predicted share IV–V (%) |
 |---|---|---|---|---|---|---|

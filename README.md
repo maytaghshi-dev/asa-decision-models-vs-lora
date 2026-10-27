@@ -59,6 +59,7 @@ python analysis/scripts/130_figures_v5.py   # writes figures/*_{en,zh}.{png,pdf,
 | Natural-language guidance | 83, 85 |
 | Screen for contradictory generative content | 81 |
 | Tables and figures | 86, 94, 130 |
+| Cold-start contrast and ASA IV–V operating characteristics | 131 |
 
 ## Environment
 See `requirements.txt`.
