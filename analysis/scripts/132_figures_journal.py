@@ -24,13 +24,13 @@ BLUE, SKY, VERM, AMBER, GREY, INK = "#0072B2", "#56B4E9", "#D55E00", "#E69F00", 
 FS = 7
 
 def style(lang):
-    fam = ["TeX Gyre Heros", "Liberation Sans", "DejaVu Sans"] if lang == "en" else ["Liberation Serif", "Noto Serif CJK SC", "DejaVu Serif"]
+    fam = ["TeX Gyre Heros", "Liberation Sans", "DejaVu Sans"] if lang == "en" else ["Noto Serif CJK SC", "DejaVu Serif"]
     plt.rcParams.update({"font.family": fam, "font.sans-serif": fam, "font.serif": fam,
         "font.size": FS, "axes.labelsize": FS, "axes.titlesize": FS, "xtick.labelsize": FS, "ytick.labelsize": FS, "legend.fontsize": FS,
         "axes.linewidth": 0.5, "xtick.major.width": 0.5, "ytick.major.width": 0.5, "xtick.major.size": 2.5, "ytick.major.size": 2.5,
         "xtick.minor.width": 0.4, "ytick.minor.width": 0.4, "xtick.minor.size": 1.5, "lines.linewidth": 1.0, "lines.markersize": 3.5,
         "axes.spines.top": False, "axes.spines.right": False, "axes.unicode_minus": False, "legend.frameon": False,
-        "axes.titleweight": "normal", "pdf.fonttype": 42, "svg.fonttype": "none", "mathtext.fontset": "custom",
+        "axes.titleweight": "normal", "pdf.fonttype": 42 if lang == "en" else 3, "svg.fonttype": "none", "mathtext.fontset": "custom",
         "mathtext.rm": fam[0], "mathtext.it": fam[0] + ":italic"})
 
 def save(fig, name, lang):
